@@ -19,20 +19,17 @@ let winter_sports = sports.slice(0, 5);
 let fruits = summer_sports.splice(2,2);
 fruits.push(winter_sports.splice(2,1)[0]);
 
-console.log(`*** Winter sports ***
-${winter_sports[0].join(`: `)}
-${winter_sports[1].join(`: `)}
-${winter_sports[2].join(`: `)}
-${winter_sports[3].join(`: `)}
+console.log(`*** Winter sports ***`);
+for(let i=0; i<winter_sports.length; i++){
+    console.log(winter_sports[i].join(`: `));
+}
 
-*** Summer sports ***
-${summer_sports[0].join(`: `)}
-${summer_sports[1].join(`: `)}
-${summer_sports[2].join(`: `)}
-${summer_sports[3].join(`: `)}
+console.log(`*** Summer sports ***`);
+for(let i=0; i<summer_sports.length; i++){
+    console.log(summer_sports[i].join(`: `));
+}
 
-*** Fruits ***
-${fruits[0].join(`: `)}
-${fruits[1].join(`: `)}
-${fruits[2].join(`: `)}
-`);
+console.log(`*** Fruits ***`);
+for(let i=0; i<fruits.length; i++){
+    console.log(fruits[i].join(`: `));
+}
